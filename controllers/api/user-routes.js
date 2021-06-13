@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const {Post, User} = require('../../models');
+const {Post, User, Comment} = require('../../models');
 
 // Get all users
 router.get('/', (req, res) => {
@@ -13,7 +13,7 @@ router.get('/', (req, res) => {
     });
 });
 
-// Get 1 user
+// Get one user
 router.get('/:id', (req, res) => {
     User.findOne({
         attributes: { exclude: ['password']},
@@ -24,6 +24,14 @@ router.get('/:id', (req, res) => {
             {
                 model: Post,
                 attributes: ['id', 'title', 'contents', 'created_at']
+            },
+            {
+                model: Comment,
+                attributes: ['id', 'comment_text', 'created_at'],
+                include: {
+                    model: Post,
+                    attributes: ['title']
+                }
             }
         ]
     })
