@@ -1,0 +1,83 @@
+main {
+  padding-top: 2%;
+}
+
+body {
+  background-color: black;
+}
+
+header {
+  background-color: black;
+  padding-bottom: 2%;
+  border-bottom: solid;
+  border-color: white;
+  border: solid bottom white;
+}
+
+.home {
+  padding-right: 2%;
+}
+
+.dashboard {
+  padding-right: 2%;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 30px;
+}
+
+a:hover {
+  color: yellow;
+}
+
+.jumbo-tron {
+  color: whitesmoke;
+  font-size: 50px;
+  text-align: left;
+  padding-left: 5%;
+  padding-top: 2%;
+}
+
+.container {
+  padding-top: 2%;
+}
+
+#post-box {
+  border-style: solid;
+  border-color: red;
+  margin-top: 1%;
+}
+
+.title {
+  background-color: black;
+  border-bottom: solid;
+  border-color: white;
+}
+
+.content {
+  padding-top: 1%;
+}
+
+h2 {
+  color: whitesmoke;
+}
+
+p {
+  color: yellow;
+}
+
+.user {
+  color: whitesmoke;
+}
+
+.btnLogin {
+  color: yellow;
+  background-color: gray;
+}
+
+.btnSignup {
+  color: yellow;
+  background-color: gray;
+}
