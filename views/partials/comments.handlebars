@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <h2>Comments</h2>
+        {{#each this}}
+        <article class="col-12 post-box">
+            <div class="title">
+                <h4 class="title-text col">Posted by: {{user.username}} </h4>
+            </div>         
+            <div class="content">
+                <p>{{comment_text}}</p>
+            </div>
+        </article>
+        {{/each}}
+    </div>
+</div> 
