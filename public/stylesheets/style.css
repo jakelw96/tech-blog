@@ -28,6 +28,14 @@ a {
   font-size: 30px;
 }
 
+.btnLogout {
+  background: none;
+  border: none;
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 30px;
+}
+
 a:hover {
   color: yellow;
 }
@@ -76,8 +84,3 @@ p {
   color: yellow;
   background-color: gray;
 }
-
-/* .btnSignup {
-  color: yellow;
-  background-color: gray;
-} */

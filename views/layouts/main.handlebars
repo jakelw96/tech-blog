@@ -24,7 +24,7 @@
                                 <a href="#Home">Dashboard</a>
                             </div>
                             <div class="logout">
-                                <button id="logout" class="btn">
+                                <button id="logout" class="btnLogout">Logout</button>
                             </div>
                             {{else}}
                             <a href="/login">Login</a>
@@ -42,6 +42,8 @@
     <main>
        {{{body}}} 
     </main>
-
+{{#if loggedIn }}
+<script src="/javascript/logout.js"></script>
+{{/if}}
 </body>
 </html>
