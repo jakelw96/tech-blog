@@ -20,7 +20,11 @@
                                 <a href="/">Home</a>
                             </div>
                             <div class="dashboard">
-                                <a href="#Home">Dashboard</a>
+                                {{#if loggedIn }}
+                                <a href="/dashboard">Dashboard</a>
+                                {{else}}
+                                <a href="/login">Dashboard</a>
+                                {{/if}}
                             </div>
                             {{#if loggedIn }}
                             <div class="logout">
