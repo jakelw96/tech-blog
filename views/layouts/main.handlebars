@@ -19,12 +19,16 @@
                             <div class="home">
                                 <a href="#Home">Home</a>
                             </div>
+                            {{#if loggedIn }}
                             <div class="dashboard">
                                 <a href="#Home">Dashboard</a>
                             </div>
                             <div class="logout">
-                                <a href="#Home">Logout</a>
+                                <button id="logout" class="btn">
                             </div>
+                            {{else}}
+                            <a href="/login">Login</a>
+                            {{/if}}
                         </div>
                     </div>
                     <div class="col-12">

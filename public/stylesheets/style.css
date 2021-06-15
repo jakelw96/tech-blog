@@ -44,7 +44,7 @@ a:hover {
   padding-top: 2%;
 }
 
-#post-box {
+.post-box {
   border-style: solid;
   border-color: red;
   margin-top: 1%;
@@ -72,12 +72,12 @@ p {
   color: whitesmoke;
 }
 
-.btnLogin {
+.btn {
   color: yellow;
   background-color: gray;
 }
 
-.btnSignup {
+/* .btnSignup {
   color: yellow;
   background-color: gray;
-}
+} */
