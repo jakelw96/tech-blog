@@ -88,3 +88,8 @@ p {
   color: yellow;
   background-color: gray;
 }
+
+textarea {
+  height: 150px;
+  width: 400px;
+}
