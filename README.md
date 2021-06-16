@@ -12,6 +12,7 @@ The Tech Blog is an CMS style blog where you can create, read, and delete posts.
 - [Contributing](#contributing)
 - [Tests](#tests)
 - [Questions](#questions)
+- [Screenshot](#screenshot)
 
 ## Installation
 
@@ -47,3 +48,5 @@ Email is preferred.
 ## Deployed Application
 
 ## Screenshot
+
+![screenshot-tech-blog](https://user-images.githubusercontent.com/78703743/122161370-d5758b80-ce2e-11eb-8c18-3acc21fb60c4.jpg)
