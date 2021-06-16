@@ -48,6 +48,8 @@ Email is preferred.
 
 ## Deployed-Application
 
+[Deployed-Application](https://tech-blog-jlw.herokuapp.com/)
+
 ## Screenshot
 
 ![screenshot-tech-blog](https://user-images.githubusercontent.com/78703743/122161663-53399700-ce2f-11eb-80d8-962273358b0d.jpg)
