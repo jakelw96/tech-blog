@@ -1,9 +1,9 @@
 const router = require('express').Router();
-const sequelize = require('../config/connection');
 const { Post, User, Comment } = require('../models');
+const auth = require('../utils/authenticate');
 
 // Get all posts for user
-router.get('/', (req, res) => {
+router.get('/', auth, (req, res) => {
     Post.findAll({
         where: {
             user_id: req.session.user_id
@@ -35,7 +35,7 @@ router.get('/', (req, res) => {
 });
 
 // Update a post
-router.get('/edit/:id', (req, res) => {
+router.get('/edit/:id', auth, (req, res) => {
     Post.findByPk(req.params.id, {
         attributes: ['id', 'title', 'contents', 'created_at'],
         include: [

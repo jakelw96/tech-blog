@@ -7,14 +7,6 @@
             <h4>Post</h4>
             <textarea name="post-contents"></textarea>
         </div>
-        {{!-- <div>
-            <h4>Post</h4>
-            <form class="post-contents">
-                <div>
-                    <textarea name="post-contents"></textarea>
-                </div>
-            </form>
-        </div> --}}
         <button type="submit" class="btn">Create Post</button>
     </form>
 </div>
@@ -28,15 +20,8 @@
                 <ol>
                 {{#each posts as |post|}}
                     <li>
-                        {{> post-data post}}
-                        <div class="row">
-                            <div class="col-6">
-                                <a href="/dashboard/edit/{{post.id}}">Edit Post</a>
-                            </div>
-                            <div class="col-6">
-                                <button id="delete-post" class="btnDeletePost">Delete Post</button>
-                            </div>
-                        </div>
+                    {{> post-data post}}
+                        <a href="/dashboard/edit/{{post.id}}">Edit Post</a>
                     </li>
                 {{/each}}
                 </ol>
