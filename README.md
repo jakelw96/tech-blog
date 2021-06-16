@@ -49,4 +49,4 @@ Email is preferred.
 
 ## Screenshot
 
-![screenshot-tech-blog](https://user-images.githubusercontent.com/78703743/122161370-d5758b80-ce2e-11eb-8c18-3acc21fb60c4.jpg)
+![screenshot-tech-blog](https://user-images.githubusercontent.com/78703743/122161663-53399700-ce2f-11eb-80d8-962273358b0d.jpg)
