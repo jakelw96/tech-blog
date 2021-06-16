@@ -37,20 +37,38 @@
 
     <main>
        <div class="container">
-            <div class="row">
-                <h2>Comments</h2>
-                <article class="col-12 post-box">
-                    <div class="title">
-                        
-                            <h2 class="title-text col">Posted by: {{user.username}} </h2>
-                        
-                    </div>         
-                    <div class="content">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto rem modi sunt tempora, dolorem at ipsam dolore eius ut deserunt sequi facilis commodi beatae iure unde, provident magni eligendi natus?</p>
+            <h2>Create New Post</h2>
+            <form class="new-post">
+                <div>
+                    <h4>Post Title</h4>
+                    <input type="text" id="post-title" name="post-title" />
+                    <h4>Post</h4>
+                    <div>
+                        <textarea name="post-data"></textarea>
                     </div>
-                </article>
-            </div>
-        </div> 
+                </div>
+                <button type="submit" class="btn">Create Post</button>
+            </form>
+        </div>
+     
+        
+    <div class="container">
+        <div class="row">
+            <section>
+                <h2>Your Posts</h2>
+                <ol>
+                Stuff
+                <li>
+                    {{> post-info post}}
+                    <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit Post</a>
+                </li>
+                {{/each}}
+            </ol>
+        </section>
+        {{/if}}
+        </div>
+    </div>    
+    
     </main>
 
 </body>

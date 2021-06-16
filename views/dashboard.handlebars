@@ -1,0 +1,48 @@
+<div class="container">
+    <h2>Create New Post</h2>
+    <form class="new-post">
+        <div>
+            <h4>Post Title</h4>
+            <input type="text" id="post-title" name="post-title" />
+            <h4>Post</h4>
+            <textarea name="post-contents"></textarea>
+        </div>
+        {{!-- <div>
+            <h4>Post</h4>
+            <form class="post-contents">
+                <div>
+                    <textarea name="post-contents"></textarea>
+                </div>
+            </form>
+        </div> --}}
+        <button type="submit" class="btn">Create Post</button>
+    </form>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            {{#if posts.length}}
+            <section>
+                <h2>Your Posts</h2>
+                <ol>
+                {{#each posts as |post|}}
+                    <li>
+                        {{> post-data post}}
+                        <div class="row">
+                            <div class="col-6">
+                                <a href="/dashboard/edit/{{post.id}}">Edit Post</a>
+                            </div>
+                            <div class="col-6">
+                                <button id="delete-post" class="btnDeletePost">Delete Post</button>
+                            </div>
+                        </div>
+                    </li>
+                {{/each}}
+                </ol>
+            </section>
+            {{/if}}
+        </div>
+    </div>
+</div>
+<script src="/javascript/create-post.js"></script>
