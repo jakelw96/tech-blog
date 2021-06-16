@@ -12,6 +12,7 @@ The Tech Blog is an CMS style blog where you can create, read, and delete posts.
 - [Contributing](#contributing)
 - [Tests](#tests)
 - [Questions](#questions)
+- [Deployed-Application](#deployed-application)
 - [Screenshot](#screenshot)
 
 ## Installation
@@ -45,7 +46,7 @@ Email Address: jake.lw96@gmail.com
 
 Email is preferred.
 
-## Deployed Application
+## Deployed-Application
 
 ## Screenshot
 
